@@ -1,3 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct Node{
+    int data;
+    struct Node* next;
+};
+
 int hasCycle(struct Node* head){
     struct Node* slow=head;
     struct Node* fast=head;
