@@ -22,6 +22,7 @@ void dequeue() {
         return;
     }
     printf("%d deleted\n", queue[front++]);
+    if (front > rear) front = rear = -1;
 }
 
 void peek() {
